@@ -1,0 +1,22 @@
+{
+  "name": "new_tab_js",
+  "version": "1.0.0",
+  "description": "new tab page from database",
+  "main": "new_tab.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenamesjagger/new_tab_js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thenamesjagger/new_tab_js/issues"
+  },
+  "homepage": "https://github.com/thenamesjagger/new_tab_js#readme",
+  "dependencies": {
+    "ejs": "^3.1.8"
+  }
+}
