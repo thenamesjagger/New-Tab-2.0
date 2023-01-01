@@ -18,13 +18,13 @@ window.onload = function() {
   const titlesArray = Object.values(titles);
 
   const one = JSON.parse(localStorage.getItem('one'));
-  const colOne = Object.values(titles);
+  const colOne = Object.values(one);
 
   const two = JSON.parse(localStorage.getItem('two'));
-  const colTwo = Object.values(titles);
+  const colTwo = Object.values(two);
 
   const three = JSON.parse(localStorage.getItem('three'));
-  const colThree = Object.values(titles);
+  const colThree = Object.values(three);
 
   for (let i = 0; i < titlesArray.length; i++) {
     const title = titlesArray[i];
@@ -50,7 +50,7 @@ window.onload = function() {
     a.id = name;
 
     // Append the a element to the div with class 'media'
-    document.querySelector('.media').appendChild(a);
+    document.querySelector('.list > div:first-child').appendChild(a);
   }
 
   for (let i = 0; i < colTwo.length; i++) {
@@ -64,7 +64,7 @@ window.onload = function() {
     a.id = name;
 
     // Append the a element to the div with class 'media'
-    document.querySelector('.media').appendChild(a);
+    document.querySelector('.list > div:nth-child(2)').appendChild(a);
   }
 
   for (let i = 0; i < colThree.length; i++) {
@@ -78,7 +78,7 @@ window.onload = function() {
     a.id = name;
 
     // Append the a element to the div with class 'media'
-    document.querySelector('.media').appendChild(a);
+    document.querySelector('.list > div:nth-child(3)').appendChild(a);
   }
 
   // sets username for greeting message
