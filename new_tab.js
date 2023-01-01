@@ -1,20 +1,34 @@
-const ejs = require('ejs');
+const conn = sqlite3.connect('new_tab.db');
+const titles = conn.execute('SELECT name FROM titles');
+const colOne = conn.execute('SELECT * FROM one');
+const colTwo = conn.execute('SELECT * FROM two');
+const colThree = conn.execute('SELECT * FROM three');
 
-async function newTab() {
-  const conn = await sqlite3.connect('new_tab.db');
-  const titles = await conn.execute('SELECT * FROM titles');
-  const colOne = await conn.execute('SELECT * FROM one');
-  const colTwo = await conn.execute('SELECT * FROM two');
-  const colThree = await conn.execute('SELECT * FROM three');
+for (let i = 0; i < titles.length; i++) {
+  const title = titles[i];
+  const div = document.createElement('div');
+  div.className = title;
 
-  const data = {
-    media: colOne,
-    school: colTwo,
-    personal: colThree,
-  };
+  const h1 = document.createElement('h1');
+  h1.textContent = title;
+  div.appendChild(h1);
 
-  const html = await ejs.renderFile('new_tab.ejs', { titles, data });
-  return html;
+  // Append the div to the appropriate element in the DOM
+  document.querySelector('.list').appendChild(div);
+}
+
+for (let i = 0; i < colOne.length; i++) {
+  const row = colOne[i];
+  const name = row.name;
+  const link = row.link;
+
+  const a = document.createElement('a');
+  a.textContent = name;
+  a.href = link;
+  a.id = name;
+
+  // Append the a element to the div with class 'media'
+  document.querySelector('.media').appendChild(a);
 }
 
 // sets username for greeting message
