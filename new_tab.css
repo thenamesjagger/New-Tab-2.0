@@ -1,0 +1,58 @@
+body {
+    background-color: #1a1b26;
+    color: #a9b1d6;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    line-height: 0.1;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+}
+
+.list div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: auto;
+    justify-content: center;
+}
+
+a:visited, a:link, a:active {
+    color: #a9b1d6;
+    text-decoration: none;
+    font-size: 26px;
+    text-indent: 2px;
+    line-height: 1.5;
+}
+
+a:hover {
+    color: #9ece6a !important
+}
+
+#greeting {
+    font-size: 38px;
+    font-weight: 100;
+    color: #dee3de;
+}
+
+#time {
+    font-size: 48px;
+    animation:blinking 5s infinite;
+    }
+    @keyframes blinking{
+    0%{     color: #bb9af7; }
+    20%{    color: #bb9af7; }
+    40%{    color: #bb9af7; }
+    60%{    color: #bb9af7; }
+    80%{    color: #bb9af7; }
+    100%{   color: #bb9af7; }
+}
