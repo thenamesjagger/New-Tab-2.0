@@ -30,6 +30,14 @@ body {
     justify-content: center;
 }
 
+.edits {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #9ece6a
+}
+
 a:visited, a:link, a:active {
     color: #a9b1d6;
     text-decoration: none;
