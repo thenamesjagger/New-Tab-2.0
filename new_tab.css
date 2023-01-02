@@ -10,11 +10,15 @@ body {
     margin-top: 100px;
     line-height: 0.1;
     text-align: center;
+    justify-content: center;
 }
 
 .list {
     display: flex;
     flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    color: #9ece6a
 }
 
 .list div {
@@ -35,13 +39,13 @@ a:visited, a:link, a:active {
 }
 
 a:hover {
-    color: #9ece6a !important
+    color: #ff9e64 !important
 }
 
 #greeting {
     font-size: 38px;
     font-weight: 100;
-    color: #dee3de;
+    color: #2ac3de;
 }
 
 #time {
