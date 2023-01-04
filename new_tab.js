@@ -1,19 +1,19 @@
 window.onload = function() {
 
   if (!localStorage.getItem('titles')) {
-    localStorage.setItem('titles', JSON.stringify([{id: 1, name: 'media'}, {id: 2, name: 'school'}, {id: 3, name: 'personal'}]));
+    localStorage.setItem('titles', JSON.stringify([{id: 1, name: 'Col1'}, {id: 2, name: 'col2'}, {id: 3, name: 'col3l'}]));
   }
   if (!localStorage.getItem('one')) {
-    localStorage.setItem('one', JSON.stringify([{id: 1, name: 'youtube', link: 'youtube.com'}, {id: 2, name: 'twitch', link: 'twitch.tv'}, {id: 3, name: 'spotify', link: 'spotify.com'}]));
+    localStorage.setItem('one', JSON.stringify([{id: 1, name: 'link', link: 'https://web.dev'}, {id: 2, name: 'link', link: 'https://web.dev'}, {id: 3, name: 'link', link: 'https://web.dev'}]));
   }
   if (!localStorage.getItem('two')) {
-    localStorage.setItem('two', JSON.stringify([{id: 1, name: 'brightspace', link: 'https://learn.snhu.edu/d2l/home'}, {id: 2, name: 'email', link: 'https://outlook.office.com/mail/inbox'}, {id: 3, name: 'mysnhu', link: 'https://my.snhu.edu/students/Pages/default.aspx'}]));
+    localStorage.setItem('two', JSON.stringify([{id: 1, name: 'link', link: 'https://web.dev'}, {id: 2, name: 'link', link: 'https://web.dev'}, {id: 3, name: 'link', link: 'https://web.dev'}]));
   }
   if (!localStorage.getItem('three')) {
-    localStorage.setItem('three', JSON.stringify([{id: 1, name: 'gmail', link: 'https://mail.google.com'}, {id: 2, name: 'drive', link: 'https://drive.google.com/drive/my-drive'}, {id: 3, name: 'github', link: 'https://github.com/thenamesjagger'}]));
+    localStorage.setItem('three', JSON.stringify([{id: 1, name: 'link', link: 'https://web.dev'}, {id: 2, name: 'link', link: 'https://web.dev'}, {id: 3, name: 'github', link: 'https://github.com/thenamesjagger'}]));
   }
   if (!localStorage.getItem('username')) {
-    localStorage.setItem('username', JSON.stringify([{id: 1, name: 'Jagger'}]));
+    localStorage.setItem('username', JSON.stringify([{id: 1, name: 'name'}]));
   }
 
   // Retrieve data from local storage
