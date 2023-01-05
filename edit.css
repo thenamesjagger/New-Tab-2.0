@@ -2,11 +2,10 @@ body {
     background-color: #1a1b26;
     color: #a9b1d6;
     font-family: 'JetBrains Mono', monospace;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     text-align: center;
     overflow: hidden;
-    justify-content: center;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 20%;
+    bottom: -50%; 
 }

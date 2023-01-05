@@ -4,17 +4,8 @@ window.onload = function() {
   // Retrieve current data from local storage
   let one = JSON.parse(localStorage.getItem('one')) || [];
 
-  // Create a table to display the data
-  const table = document.createElement('table');
-
   // Create a row for each item in the array
   one.forEach((item, i) => {
-    const tr = document.createElement('tr');
-
-    // Create a cell for the item
-    const td = document.createElement('td');
-    tr.appendChild(td);
-
     // Create a form for the item
     const form = document.createElement('form');
     form.addEventListener('submit', (event) => {
@@ -43,7 +34,7 @@ window.onload = function() {
     button.type = 'submit';
     button.textContent = 'Submit';
     form.appendChild(button);
-    td.appendChild(form);
+    container.appendChild(form);
 
     // Create a button to delete the item
     const deleteButton = document.createElement('button');
@@ -53,9 +44,7 @@ window.onload = function() {
       localStorage.setItem('one', JSON.stringify(one));
       window.location.reload();
     });
-    td.appendChild(deleteButton);
-
-    table.appendChild(tr);
+    container.appendChild(deleteButton);
   });
     // Create a form to add a new item
     const addForm = document.createElement('form');
@@ -88,8 +77,6 @@ window.onload = function() {
     addButton.type = 'submit';
     addButton.textContent = 'Add';
     addForm.appendChild(addButton);
-  
-    container.appendChild(table);
+    
     container.appendChild(addForm);
-  };
-  
+    };
