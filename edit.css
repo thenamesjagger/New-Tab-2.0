@@ -2,10 +2,12 @@ body {
     background-color: #1a1b26;
     color: #a9b1d6;
     font-family: 'JetBrains Mono', monospace;
-    top: 40%;
-    position: fixed;
-    left: 40%;
+    height: 100%;
+    position: absolute;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+    width: 100%;
+    bottom: -50%;
 }
 

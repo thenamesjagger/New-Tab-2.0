@@ -1,7 +1,7 @@
 window.onload = function() {
 
   if (!localStorage.getItem('titles')) {
-    localStorage.setItem('titles', JSON.stringify([{id: 1, name: 'Col1'}, {id: 2, name: 'col2'}, {id: 3, name: 'col3l'}]));
+    localStorage.setItem('titles', JSON.stringify([{id: 1, name: 'Col1'}, {id: 2, name: 'col2'}, {id: 3, name: 'col3'}]));
   }
   if (!localStorage.getItem('one')) {
     localStorage.setItem('one', JSON.stringify([{id: 1, name: 'link', link: 'https://web.dev'}, {id: 2, name: 'link', link: 'https://web.dev'}, {id: 3, name: 'link', link: 'https://web.dev'}]));

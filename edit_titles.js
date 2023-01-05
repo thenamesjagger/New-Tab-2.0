@@ -9,7 +9,7 @@ window.onload = function() {
     data.forEach((item) => {
     const div = document.createElement('div');
     const p = document.createElement('p');
-    p.textContent = `Name: ${item.name}`;
+    p.textContent = `Current Column Name: ${item.name}`;
     div.appendChild(p);
 
     // Create a form for each item
