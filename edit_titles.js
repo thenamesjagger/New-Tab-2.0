@@ -8,9 +8,6 @@ window.onload = function() {
     // Create HTML elements for each item in the array
     data.forEach((item) => {
     const div = document.createElement('div');
-    const p = document.createElement('p');
-    p.textContent = `Current Column Name: ${item.name}`;
-    div.appendChild(p);
 
     // Create a form for each item
     const form = document.createElement('form');
@@ -28,6 +25,7 @@ window.onload = function() {
     const input = document.createElement('input');
     input.type = 'text';
     input.name = 'name';
+    input.value = item.name;
     form.appendChild(input);
     const button = document.createElement('button');
     button.type = 'submit';
