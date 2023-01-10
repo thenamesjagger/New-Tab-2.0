@@ -8,4 +8,10 @@ body {
     text-align: center;
     overflow: hidden;
     bottom: -50%; 
+    align-items: center;
+
+}
+
+form {
+    flex-direction: row;
 }

@@ -1,4 +1,5 @@
 window.onload = function() {
+
   const container = document.querySelector('#container');
 
   // Retrieve current data from local storage
@@ -44,7 +45,8 @@ window.onload = function() {
       localStorage.setItem('one', JSON.stringify(one));
       window.location.reload();
     });
-    container.appendChild(deleteButton);
+    form.appendChild(deleteButton);
+    container.appendChild(form);
   });
     // Create a form to add a new item
     const addForm = document.createElement('form');
