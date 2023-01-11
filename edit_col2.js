@@ -44,7 +44,8 @@ window.onload = function() {
       localStorage.setItem('two', JSON.stringify(two));
       window.location.reload();
     });
-    container.appendChild(deleteButton);
+    form.appendChild(deleteButton);
+    container.appendChild(form);
   });
     // Create a form to add a new item
     const addForm = document.createElement('form');
