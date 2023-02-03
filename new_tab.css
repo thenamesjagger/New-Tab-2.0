@@ -1,6 +1,6 @@
 body {
-    background-color: #1a1b26;
-    color: #a9b1d6;
+    background-color: #2E3440;
+    color: #D8DEE9;
     font-family: 'JetBrains Mono', monospace;
     overflow: hidden;
 }
@@ -19,7 +19,7 @@ body {
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    color: #9ece6a;
+    color: #A3BE8C;
     font-size: 16px;
 }
 
@@ -40,7 +40,7 @@ body {
     bottom: 0;
     position: absolute;
     margin-bottom: 40px;
-    color: #f7768e;
+    color: #BF616A;
 
 }
 
@@ -57,13 +57,13 @@ a:visited, a:link, a:active {
 }
 
 a:hover {
-    color: #ff9e64 !important
+    color: #D08770 !important
 }
 
 #greeting {
     font-size: 38px;
     font-weight: 100;
-    color: #2ac3de;
+    color: #8FBCBB;
 }
 
 #time {
@@ -71,10 +71,10 @@ a:hover {
     animation:blinking 5s infinite;
     }
     @keyframes blinking{
-    0%{     color: #bb9af7; }
-    20%{    color: #bb9af7; }
-    40%{    color: #bb9af7; }
-    60%{    color: #bb9af7; }
-    80%{    color: #bb9af7; }
-    100%{   color: #bb9af7; }
+    0%{     color: #B48EAD; }
+    20%{    color: #B48EAD; }
+    40%{    color: #B48EAD; }
+    60%{    color: #B48EAD; }
+    80%{    color: #B48EAD; }
+    100%{   color: #B48EAD; }
 }
